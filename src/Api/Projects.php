@@ -1265,7 +1265,7 @@ class Projects extends AbstractApi
         }
 
         if ($environment_scope) {
-            $payload['environment_scope'] = $environment_scope;
+            $payload['filter']['environment_scope'] = $environment_scope;
         }
 
         $payload = \array_merge($parameters, $payload);
@@ -1297,7 +1297,7 @@ class Projects extends AbstractApi
         }
 
         if ($environment_scope) {
-            $payload['environment_scope'] = $environment_scope;
+            $payload['filter']['environment_scope'] = $environment_scope;
         }
 
         $payload = \array_merge($parameters, $payload);
